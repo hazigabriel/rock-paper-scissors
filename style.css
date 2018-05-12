@@ -1,0 +1,30 @@
+body {
+	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+.header {
+	background-color: white;
+}
+.header	 h2{
+	text-align: center;
+	padding: 25px;
+
+}
+.weapon-choice input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.results {
+	padding-top: 50px
+}
+.footer {
+	background-color: white;
+	position: absolute;
+    bottom: 0;  
+    margin: 0 auto;
+}
+.footer  a {
+	float:left;
+	padding: 25px 0 25px 0;
+}
