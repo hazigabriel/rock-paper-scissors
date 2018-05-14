@@ -1,3 +1,7 @@
+* {
+	font-family: 'Pangolin', cursive;
+	letter-spacing: 1px;
+}
 body {
 	background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
 }
@@ -9,14 +13,37 @@ body {
 	padding: 25px;
 
 }
+.select {
+	padding-top:  70px;
+}
 .weapon-choice input {
+	opacity: 0.8;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+   
 }
+.weapon-choice input:hover {
+	opacity: 1 ;
+	transform: rotate(359deg);
+	transition-duration: 400ms;
+}
+input:focus{
+    outline: none;
+}
+
 .results {
 	padding-top: 50px
+}
+#playerScore {
+	color:green;
+}
+#computerScore {
+	color:red;
+}
+.right {
+	float: right; 
 }
 .footer {
 	background-color: white;

@@ -4,6 +4,8 @@
 		<title>Rock, Paper, Scissors</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+
 
 
 
@@ -11,34 +13,36 @@
 
 	<div class="container-fluid header">
 		<h2>Chose your weapon</h2>
-	</div><
+	</div>
 	<div class="container select">
 
 
 		<div class="row">
-			<div class="col-md-4 weapon-choice"> <input type="image" src="images/rock.png" /> </div>
-			<div class="col-md-4 weapon-choice"> <input type="image" src="images/paper.png" /></div>
-			<div class="col-md-4 weapon-choice"> <input type="image" src="images/scissors.png" /> </div>
+			<div class="col-md-4 weapon-choice " id="rock"> <input type="image" src="images/rock.png" /> </div>
+			<div class="col-md-4 weapon-choice"> <input type="image" src="images/paper.png" id="paper"/></div>
+			<div class="col-md-4 weapon-choice"> <input type="image" src="images/scissors.png" id="scissors"/> </div>
 		</div>
 		<div class="row results">
-			<div class="col-md-6">	
-				<h3>This round winner: <span class="this-round">asd</span> </h3>
+			<div class="offset-md-1 col-md-5">	
+				<h3>This round winner: <span  id="thisRound">no round played yet.</span> </h3>
+				<h3>Your choice: <span id="playerChoiceValue">none yet.</span> </h3>
+				<h3>Computer choice: <span id="computerChoiceValue">none yet.</span></h3>
 			</div>
-			<div class="col-md-6">
-				<h3>Game statistics</h3>
-				<h4>Player: <span class="player-results"></span> points</h4>
-				<h4>Computer: <span class="computer-results"></span> points</h4>
+			<div class="col-md-5 ">
+				<div class="right">
+					<h3>Game statistics</h3>
+					<h4>Player: <span id="playerScore">0</span> points</h4>
+					<h4>Computer: <span id="computerScore">0</span> points</h4>
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="container-fluid footer">
 		<div class="row">
-			
-
 			<div class="offset-md-10 col-md-2">	<p> <a href="https://github.com/hazigabriel">coded by Gabriel Hazi @2018</a></p> </div> 
 		</div>
 	</div>
-
+	<script src="script.js"></script>
 
 
 </html>
