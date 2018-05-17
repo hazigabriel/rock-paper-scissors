@@ -53,19 +53,20 @@ playerPaper.onclick = function() {
 			thisRoundWinner.innerHTML = "You Win!";
 			playerChoiceSpan.innerHTML = "paper";
 			computerChoiceSpan.innerHTML = computerResult;
+			document.getElementById("playerScore").innerHTML = playerScore++;
 			break;
 		case("paper"):		
 			thisRoundWinner.innerHTML = "It's a tie!";
 			playerChoiceSpan.innerHTML = "paper";
 			computerChoiceSpan.innerHTML = computerResult;
-			document.getElementById("computerScore").innerHTML = computerScore++;
 			break;
 
 		case("scissors"):
 			thisRoundWinner.innerHTML = "Computer wins!";
 			playerChoiceSpan.innerHTML = "paper";
 			computerChoiceSpan.innerHTML = computerResult;
-			document.getElementById("playerScore").innerHTML = playerScore++;
+			
+			document.getElementById("computerScore").innerHTML = computerScore++;
 			break;
 
 	}
@@ -102,5 +103,7 @@ resetButton.onclick = function(){
 	playerChoiceSpan.innerHTML = "none yet."
 	computerChoiceSpan.innerHTML = "none yet.";
 	document.getElementById("computerScore").innerHTML = 0;
+	computerScore = 1;
 	document.getElementById("playerScore").innerHTML = 0;
+	playerScore = 1;
 }
